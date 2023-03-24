@@ -1,0 +1,14 @@
+{
+  "name": "blog-academico-css",
+  "version": "1.0.0",
+  "description": "etapa de nivelación",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Chemical Science For Students",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
