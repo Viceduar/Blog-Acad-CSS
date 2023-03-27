@@ -1,4 +1,7 @@
 .featured {
+  background-color: $color-primary-very-light;
+  padding: 3.2rem 0;
+
   &__container {
     display: flex;
     justify-content: space-around;
@@ -10,6 +13,7 @@
     width: 25rem;
     border-radius: 3px;
     overflow: hidden;
+    background-color: $color-white;
     box-shadow: 0 1rem 1rem rgba($color-black, 0.15);
 
     &-img {
