@@ -1,0 +1,36 @@
+.img-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  & > img {
+    transition: all 0.2s;
+  }
+
+  &:hover > img {
+    filter: blur(2px) brightness(0.8);
+    transform: scale(1.1);
+  }
+
+  &::after {
+    content: "LEER MÁS";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &:hover::after {
+    opacity: 100%;
+    top: 50%;
+  }
+}

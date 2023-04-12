@@ -7,6 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/img-btn";
+@import "components/slider";
+
+@import "layouts/article";
+@import "layouts/exploration";
+@import "layouts/featured";
+@import "layouts/footer";
 @import "layouts/header";
+@import "layouts/newest";
+@import "layouts/newsletter";
 
 @import "pages/home";
