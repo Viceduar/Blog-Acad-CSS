@@ -1,0 +1,18 @@
+.btn-return {
+  display: inline-block;
+  position: sticky;
+  top: 90%;
+  left: 1rem;
+
+  background-color: $color-primary-dark;
+  width: 3.6rem;
+  height: 3.6rem;
+  color: $color-primary-light;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

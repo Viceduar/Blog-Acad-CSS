@@ -18,20 +18,3 @@ tabContainer.addEventListener("click", function (e) {
     .querySelector(`.exploration__content--${clicked.dataset.tab}`)
     .classList.add("exploration__content--active");
 });
-
-/***********CONFIGURACIÓN DE NAV-STICKY*******************/
-const sectionNewestEl = document.querySelector(".section-newest");
-const obs = new IntersectionObserver(
-  function (entries) {
-    const [ent] = entries;
-
-    if (!ent.isIntersecting) document.body.classList.add("sticky");
-    else document.body.classList.remove("sticky");
-  },
-  {
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
-  }
-);
-obs.observe(sectionNewestEl);

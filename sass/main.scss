@@ -7,13 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/btn-like";
+@import "components/btn-return";
 @import "components/img-btn";
 @import "components/img-container";
 @import "components/slider";
 
 @import "layouts/article";
+@import "layouts/carousel";
 @import "layouts/exploration";
-@import "layouts/featured";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/newest";

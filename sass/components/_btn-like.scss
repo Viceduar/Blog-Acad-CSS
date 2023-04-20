@@ -1,0 +1,33 @@
+.btn-like {
+  font-size: 1.4rem;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+  background-color: $color-white;
+  color: $color-primary;
+  align-self: flex-end;
+
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary-dark;
+    border: 1px solid $color-primary-dark;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  &__big {
+    font-size: 1.6rem;
+    height: 4.4rem;
+    padding: 0.8rem 1.2rem;
+
+    &__centered {
+      align-self: auto;
+    }
+  }
+}
