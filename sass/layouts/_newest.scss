@@ -2,4 +2,15 @@
   max-width: 130rem;
   margin: 0 auto;
   column-gap: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  //750px
+  @include respond(46.875em) {
+    grid-template-columns: 1fr;
+
+    &__img__box {
+      grid-row: 1;
+    }
+  }
 }

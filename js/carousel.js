@@ -2,7 +2,11 @@ const itemsEl = document.querySelectorAll(".carousel__item");
 const btnLeft = document.querySelector(".btn__carousel--left");
 const btnRight = document.querySelector(".btn__carousel--right");
 
-const elemPerView = 3;
+let elemPerView;
+if (window.matchMedia("(max-width: 37.5em)").matches) elemPerView = 1;
+else if (window.matchMedia("(max-width: 56.25em)").matches) elemPerView = 2;
+else elemPerView = 3;
+
 const maxScrolls = Math.ceil(itemsEl.length / elemPerView) - 1;
 
 let scrollsLeft = maxScrolls;

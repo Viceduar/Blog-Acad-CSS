@@ -1,0 +1,29 @@
+.btn-mobile-nav {
+  display: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  font-size: 2.4rem;
+  background-color: inherit;
+  border-radius: 100px;
+  border: 1px solid $color-white;
+
+  @include respond(tab-port) {
+    display: flex;
+  }
+}
+
+.icon-mobile-nav {
+  color: $color-white;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}

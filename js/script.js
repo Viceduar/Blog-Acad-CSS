@@ -3,7 +3,7 @@ const tabContainer = document.querySelector(".exploration__tab-container");
 const tabs = document.querySelectorAll(".exploration__tab");
 const expContent = document.querySelectorAll(".exploration__content");
 
-tabContainer.addEventListener("click", function (e) {
+tabContainer?.addEventListener("click", function (e) {
   const clicked = e.target;
 
   if (!clicked.classList.contains("exploration__tab")) return;
@@ -17,4 +17,12 @@ tabContainer.addEventListener("click", function (e) {
   document
     .querySelector(`.exploration__content--${clicked.dataset.tab}`)
     .classList.add("exploration__content--active");
+});
+
+/***********CONFIGURACIÓN DE NAV MOBILE*******************/
+const btnEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnEl.addEventListener("click", function (e) {
+  headerEl.classList.toggle("nav-open");
 });

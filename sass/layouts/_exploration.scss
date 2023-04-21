@@ -35,6 +35,20 @@
     display: none;
     height: 60rem;
 
+    //1060px
+    @include respond(66.25em) {
+      height: 65rem;
+    }
+
+    //750px
+    @include respond(46.875em) {
+      height: 70rem;
+    }
+
+    @include respond(phone) {
+      height: 90rem;
+    }
+
     &--active {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -54,6 +68,11 @@
     width: 80%;
     height: 50%;
     margin: 0 auto;
+
+    //750px
+    @include respond(46.875em) {
+      display: none;
+    }
   }
 
   &__block {
@@ -90,6 +109,81 @@
     &--7 {
       // background-color: orchid;
       grid-area: 7 / 10 / -1 / -1;
+    }
+
+    //750px
+    @include respond(46.875em) {
+      &--1 {
+        // background-color: green;
+        grid-area: 1 / 1 / 6 / -1;
+      }
+
+      &--2 {
+        // background-color: blue;
+        grid-area: 6 / 1 / 9 / 4;
+      }
+
+      &--3 {
+        // background-color: purple;
+        grid-area: 6 / 4 / 9 /7;
+      }
+
+      &--4 {
+        // background-color: blue;
+        grid-area: 9 / 1 / -1 / 4;
+      }
+
+      &--5 {
+        // background-color: purple;
+        grid-area: 9 / 4 / -1 / 7;
+      }
+
+      &--6 {
+        // background-color: aqua;
+        grid-area: 6/ 7 /9 / -1;
+      }
+
+      &--7 {
+        // background-color: orchid;
+        grid-area: 9 / 7 / -1 / -1;
+      }
+    }
+
+    @include respond(phone) {
+      &--1 {
+        // background-color: green;
+        grid-area: 1 / 1 / 6 / -1;
+      }
+
+      &--2 {
+        // background-color: blue;
+        grid-area: 6 / 1 / 7 / 7;
+      }
+
+      &--3 {
+        // background-color: purple;
+        grid-area: 6 / 7 / 7 /-1;
+      }
+
+      &--4 {
+        // background-color: blue;
+        grid-area: 7 / 1 / 8 / 7;
+      }
+
+      &--5 {
+        // background-color: purple;
+        grid-area: 7 / 7 / 8 / -1;
+      }
+
+      &--6 {
+        // background-color: aqua;
+        grid-area: 8/ 1 /-1 / 7;
+      }
+
+      &--7 {
+        // background-color: orchid;
+        grid-area: 8 / 7 / -1 / -1;
+      }
     }
   }
 }
