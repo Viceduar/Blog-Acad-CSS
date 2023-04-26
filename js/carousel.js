@@ -6,7 +6,6 @@ const mediaQueryPhone = 600; //600px phone
 const mediaQueryTabPort = 900; //900px tab-port
 const mediaQueryTabLand = 1200; //1200px tab-land
 const mediaQueryDesktop = 1800; // 1800px desktop
-let currentQuery = window.innerWidth;
 
 let elemPerView;
 let scrollsLeft;
@@ -19,10 +18,12 @@ const mediaSensor = function (width) {
     return mediaQueryPhone;
   } else if (width <= mediaQueryTabPort) {
     return mediaQueryTabPort;
-  } else if (width <= mediaQueryDesktop) {
+  } else if (mediaQueryTabPort < width) {
     return mediaQueryDesktop;
   }
 };
+
+let currentQuery = mediaSensor(window.innerWidth);
 
 const carouselInit = function () {
   if (currentQuery <= mediaQueryPhone) {
