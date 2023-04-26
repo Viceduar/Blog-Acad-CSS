@@ -46,6 +46,11 @@
     @include respond(phone) {
       width: 100%;
     }
+
+    //500px
+    @include respond(31.25em) {
+      padding: 6rem 4.8rem;
+    }
   }
 }
 
@@ -74,6 +79,11 @@
     width: 90%;
     display: block;
     transition: all 0.3s;
+
+    //500px
+    @include respond(31.25em) {
+      width: 100%;
+    }
 
     &::-webkit-input-placeholder {
       color: $color-gray;

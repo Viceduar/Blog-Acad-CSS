@@ -21,11 +21,20 @@
 .u-float-right {
   margin-left: 3.2rem;
   float: right;
+
+  @include respond(phone) {
+    margin-left: 0rem;
+    float: none;
+  }
 }
 
 .u-float-left {
   margin-right: 3.2rem;
   float: left;
+
+  @include respond(phone) {
+    margin-right: 1.6rem;
+  }
 }
 
 .u-flex-centered {
@@ -51,4 +60,9 @@
 .u-grid-2-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  //512px
+  @include respond(32em) {
+    grid-template-columns: 1fr;
+  }
 }

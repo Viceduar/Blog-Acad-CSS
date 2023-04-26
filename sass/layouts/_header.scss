@@ -22,7 +22,7 @@
 .main-nav {
   @include respond(tab-port) {
     background-color: rgba($color-primary, 0.97);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

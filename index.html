@@ -30,14 +30,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- SWIPER -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
     <title>🧪 Blog Académico CSS</title>
   </head>
   <body>
@@ -48,10 +40,14 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Inicio</a></li>
-          <li><a href="#" class="main-nav-link">Blog</a></li>
-          <li><a href="#" class="main-nav-link">Acerca de</a></li>
-          <li><a href="#" class="main-nav-link">Contacto</a></li>
+          <li><a href="#" class="main-nav-link u-flex-centered">Inicio</a></li>
+          <li><a href="#" class="main-nav-link u-flex-centered">Blog</a></li>
+          <li>
+            <a href="#" class="main-nav-link u-flex-centered">Acerca de</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link u-flex-centered">Contacto</a>
+          </li>
         </ul>
       </nav>
 
@@ -60,6 +56,10 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
+
+    <button class="btn-return">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
 
     <main>
       <section class="section-newest">
@@ -395,7 +395,7 @@
             class="exploration__content exploration__content--1 exploration__content--active"
           >
             <div
-              class="exploration__main u-grid-2-cols u-padding-small exploration__block--1"
+              class="exploration__main u-grid-2-cols u-padding-small exploration__block exploration__block--1"
             >
               <div class="article__text__box">
                 <a
@@ -432,7 +432,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--2">
+            <div
+              class="u-padding-small exploration__block exploration__block--2"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -456,7 +458,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--3">
+            <div
+              class="u-padding-small exploration__block exploration__block--3"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -480,7 +484,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--4">
+            <div
+              class="u-padding-small exploration__block exploration__block--4"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -503,7 +509,9 @@
                 </button>
               </div>
             </div>
-            <div class="u-padding-small exploration__block--5">
+            <div
+              class="u-padding-small exploration__block exploration__block--5"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -527,7 +535,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--6">
+            <div
+              class="u-padding-small exploration__block exploration__block--6"
+            >
               <div class="exploration__img__big">
                 <a
                   href="html/article-example.html"
@@ -565,21 +575,27 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--7">
+            <div
+              class="u-padding-small exploration__block exploration__block--7"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
-                  class="title__article title__article__big"
+                  class="title__article title__article__med"
                   >Título</a
                 >
                 <a href="#" class="author__article author__article__big"
                   >Por Autor</a
                 >
 
-                <p class="description__article description__article__med">
+                <p class="description__article description__article__small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam Lorem ipsum dolor sit amet.
+                  assumenda aperiam Lorem ipsum dolor. Lorem ipsum, dolor sit
+                  amet consectetur adipisicing elit. Perferendis similique
+                  quibusdam dolor dolorum error aperiam corporis incidunt iusto
+                  pariatur! Dolorum at, et sequi assumenda ipsum laborum magni
+                  quam cum pariatur?
                 </p>
 
                 <button class="btn-like">
@@ -593,7 +609,7 @@
 
           <div class="exploration__content exploration__content--2">
             <div
-              class="exploration__main u-grid-2-cols u-padding-small exploration__block--1"
+              class="exploration__main u-grid-2-cols u-padding-small exploration__block exploration__block--1"
             >
               <div class="article__text__box">
                 <a
@@ -630,7 +646,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--2">
+            <div
+              class="u-padding-small exploration__block exploration__block--2"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -654,7 +672,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--3">
+            <div
+              class="u-padding-small exploration__block exploration__block--3"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -678,7 +698,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--4">
+            <div
+              class="u-padding-small exploration__block exploration__block--4"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -701,7 +723,9 @@
                 </button>
               </div>
             </div>
-            <div class="u-padding-small exploration__block--5">
+            <div
+              class="u-padding-small exploration__block exploration__block--5"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -725,7 +749,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--6">
+            <div
+              class="u-padding-small exploration__block exploration__block--6"
+            >
               <div class="exploration__img__big">
                 <a
                   href="html/article-example.html"
@@ -763,18 +789,20 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--7">
+            <div
+              class="u-padding-small exploration__block exploration__block--7"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
-                  class="title__article title__article__big"
+                  class="title__article title__article__med"
                   >Título</a
                 >
                 <a href="#" class="author__article author__article__big"
                   >Por Autor</a
                 >
 
-                <p class="description__article description__article__med">
+                <p class="description__article description__article__small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam Lorem ipsum dolor sit amet.
@@ -791,7 +819,7 @@
 
           <div class="exploration__content exploration__content--3">
             <div
-              class="exploration__main u-grid-2-cols u-padding-small exploration__block--1"
+              class="exploration__main u-grid-2-cols u-padding-small exploration__block exploration__block--1"
             >
               <div class="article__text__box">
                 <a
@@ -828,7 +856,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--2">
+            <div
+              class="u-padding-small exploration__block exploration__block--2"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -852,7 +882,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--3">
+            <div
+              class="u-padding-small exploration__block exploration__block--3"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -876,7 +908,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--4">
+            <div
+              class="u-padding-small exploration__block exploration__block--4"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -899,7 +933,9 @@
                 </button>
               </div>
             </div>
-            <div class="u-padding-small exploration__block--5">
+            <div
+              class="u-padding-small exploration__block exploration__block--5"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
@@ -923,7 +959,9 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--6">
+            <div
+              class="u-padding-small exploration__block exploration__block--6"
+            >
               <div class="exploration__img__big">
                 <a
                   href="html/article-example.html"
@@ -961,18 +999,20 @@
               </div>
             </div>
 
-            <div class="u-padding-small exploration__block--7">
+            <div
+              class="u-padding-small exploration__block exploration__block--7"
+            >
               <div class="article__text__box">
                 <a
                   href="html/article-example.html"
-                  class="title__article title__article__big"
+                  class="title__article title__article__med"
                   >Título</a
                 >
                 <a href="#" class="author__article author__article__big"
                   >Por Autor</a
                 >
 
-                <p class="description__article description__article__med">
+                <p class="description__article description__article__small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam Lorem ipsum dolor sit amet.

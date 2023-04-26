@@ -102,11 +102,22 @@ body {
 .description__article__small {
   font-size: 1.4rem;
   line-height: 1.1; }
+  @media only screen and (max-width: 32em) {
+    .description__article__small {
+      display: none; } }
 
 .p__article {
   font-size: 1.8rem;
   text-align: justify;
   margin-bottom: 2.4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .p__article {
+      text-align: left;
+      font-size: 2.2rem; } }
+  @media only screen and (max-width: phone) {
+    .p__article {
+      text-align: left;
+      font-size: 2.2rem; } }
   .p__article__quote {
     border: 1px solid #5757ce;
     border-radius: 5px;
@@ -137,10 +148,24 @@ body {
 .u-float-right {
   margin-left: 3.2rem;
   float: right; }
+  @media only screen and (max-width: 37.5em) {
+    .u-float-right {
+      margin-left: 0rem;
+      float: none; } }
+  @media only screen and (max-width: phone) {
+    .u-float-right {
+      margin-left: 0rem;
+      float: none; } }
 
 .u-float-left {
   margin-right: 3.2rem;
   float: left; }
+  @media only screen and (max-width: 37.5em) {
+    .u-float-left {
+      margin-right: 1.6rem; } }
+  @media only screen and (max-width: phone) {
+    .u-float-left {
+      margin-right: 1.6rem; } }
 
 .u-flex-centered {
   display: flex;
@@ -161,6 +186,9 @@ body {
 .u-grid-2-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  @media only screen and (max-width: 32em) {
+    .u-grid-2-cols {
+      grid-template-columns: 1fr; } }
 
 .btn-like {
   font-size: 1.4rem;
@@ -219,6 +247,7 @@ body {
   position: sticky;
   top: 90%;
   left: 1rem;
+  z-index: 500;
   background-color: #15161c;
   width: 3.6rem;
   height: 3.6rem;
@@ -259,16 +288,28 @@ body {
 .img-container {
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   .img-container--big {
     width: 50%;
-    height: 40rem; }
+    height: 30rem; }
+    @media only screen and (max-width: 37.5em) {
+      .img-container--big {
+        width: 100%; } }
+    @media only screen and (max-width: phone) {
+      .img-container--big {
+        width: 100%; } }
   .img-container--small {
     width: 25%;
-    height: 20rem; }
+    height: 15rem; }
+    @media only screen and (max-width: 37.5em) {
+      .img-container--small {
+        display: none; } }
+    @media only screen and (max-width: phone) {
+      .img-container--small {
+        display: none; } }
   .img-container img {
-    width: auto;
+    width: 100%;
     height: 100%; }
 
 .article__text__box {
@@ -350,13 +391,12 @@ body {
     background-color: #15161c;
     color: #fff;
     border: 1px solid #15161c;
-    font-weight: 700;
     cursor: pointer; }
   .exploration__tab--active {
     background-color: #15161c;
     color: #fff;
     border: 1px solid #15161c;
-    font-weight: 700; }
+    transform: translateY(-0.5rem); }
 
 .exploration__content {
   display: none;
@@ -364,15 +404,18 @@ body {
   @media only screen and (max-width: 66.25em) {
     .exploration__content {
       height: 65rem; } }
-  @media only screen and (max-width: 46.875em) {
+  @media only screen and (max-width: 49em) {
     .exploration__content {
-      height: 70rem; } }
-  @media only screen and (max-width: 37.5em) {
+      height: 72rem; } }
+  @media only screen and (max-width: 43em) {
     .exploration__content {
-      height: 90rem; } }
-  @media only screen and (max-width: phone) {
+      height: 82rem; } }
+  @media only screen and (max-width: 35em) {
     .exploration__content {
-      height: 90rem; } }
+      height: 100rem; } }
+  @media only screen and (max-width: 19em) {
+    .exploration__content {
+      height: 108rem; } }
   .exploration__content--active {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -384,9 +427,16 @@ body {
 .exploration__main {
   align-content: center;
   gap: 1.2rem; }
+  @media only screen and (max-width: 32em) {
+    .exploration__main {
+      display: block; } }
+
+@media only screen and (max-width: 32em) {
+  .exploration__img__main {
+    display: none; } }
 
 .exploration__img__big {
-  width: 80%;
+  width: 100%;
   height: 50%;
   margin: 0 auto; }
   @media only screen and (max-width: 46.875em) {
@@ -462,10 +512,26 @@ body {
   .exploration__block--7 {
     grid-area: 8 / 7 / -1 / -1; } }
 
+@media only screen and (max-width: 32em) {
+  .exploration__block--1 {
+    grid-area: 1 / 1 / 7 / -1; }
+  .exploration__block--2 {
+    grid-area: 7 / 1 / 8 / -1; }
+  .exploration__block--3 {
+    grid-area: 8 / 1 / 9 /-1; }
+  .exploration__block--4 {
+    grid-area: 9 / 1 / 10 / -1; }
+  .exploration__block--5 {
+    grid-area: 10 / 1 / 11 / -1; }
+  .exploration__block--6 {
+    grid-area: 11/ 1 /12 / -1; }
+  .exploration__block--7 {
+    grid-area: 12 / 1 / 13 / -1; } }
+
 .footer {
   background-color: #5757ce;
   color: #fff;
-  padding: 8rem 0;
+  padding: 3.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -503,7 +569,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .main-nav {
     background-color: rgba(87, 87, 206, 0.97);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -531,7 +597,7 @@ body {
 @media only screen and (max-width: tab-port) {
   .main-nav {
     background-color: rgba(87, 87, 206, 0.97);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -622,6 +688,9 @@ body {
     @media only screen and (max-width: phone) {
       .newsletter__form {
         width: 100%; } }
+    @media only screen and (max-width: 31.25em) {
+      .newsletter__form {
+        padding: 6rem 4.8rem; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -650,6 +719,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3s; }
+  @media only screen and (max-width: 31.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input::-webkit-input-placeholder {
     color: #868e96; }
   .form__input:focus {
@@ -698,6 +770,18 @@ body {
 .article-example {
   margin-top: 4.8rem;
   padding: 0 12.8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .article-example {
+      padding: 0 8rem; } }
+  @media only screen and (max-width: tab-port) {
+    .article-example {
+      padding: 0 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .article-example {
+      padding: 0 2rem; } }
+  @media only screen and (max-width: phone) {
+    .article-example {
+      padding: 0 2rem; } }
 
 .info-box {
   display: flex;
@@ -710,8 +794,8 @@ body {
   gap: 1.2rem; }
 
 .author-img {
-  height: 8rem;
-  width: 8rem;
+  height: 7rem;
+  width: 7rem;
   border-radius: 100px;
   overflow: hidden; }
   .author-img img {
