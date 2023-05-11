@@ -11,7 +11,7 @@
   border: 1px solid $color-primary;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
 
-  max-width: 120rem;
+  max-width: 130rem;
   height: 50rem;
   margin: 0 auto;
 
@@ -35,7 +35,7 @@
       url(../img/newsletter.jpg);
   }
 
-  &__form {
+  &-form {
     width: 50%;
     padding: 6rem;
 
@@ -55,11 +55,11 @@
 }
 
 .form {
-  &__group:not(:last-child) {
+  &-group:not(:last-child) {
     margin-bottom: 2rem;
   }
 
-  &__group:last-child {
+  &-group:last-child {
     @include respond(phone) {
       display: flex;
       justify-content: center;
@@ -67,7 +67,7 @@
     }
   }
 
-  &__input {
+  &-input {
     font-size: 1.5rem;
     font-family: inherit;
     color: inherit;
@@ -100,7 +100,7 @@
     }
   }
 
-  &__label {
+  &-label {
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 2rem;
@@ -109,7 +109,7 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown + &__label {
+  &-input:placeholder-shown + &-label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);

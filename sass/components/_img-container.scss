@@ -1,7 +1,7 @@
 .img-container {
   &--big {
     width: 50%;
-    height: 30rem;
+    aspect-ratio: 16 / 9;
 
     @include respond(phone) {
       width: 100%;
@@ -10,7 +10,7 @@
 
   &--small {
     width: 25%;
-    height: 15rem;
+    aspect-ratio: 16 / 9;
 
     @include respond(phone) {
       display: none;

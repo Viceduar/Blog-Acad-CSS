@@ -9,7 +9,7 @@
   @include respond(46.875em) {
     grid-template-columns: 1fr;
 
-    &__img__box {
+    &-img-box {
       grid-row: 1;
     }
   }

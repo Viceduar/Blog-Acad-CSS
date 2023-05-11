@@ -7,6 +7,10 @@
   border-radius: 100px;
   border: 1px solid $color-white;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @include respond(tab-port) {
     display: flex;
   }

@@ -8,50 +8,41 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"/>
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- SCRIPT -->
-    <script src="js/script.js" defer></script>
-    <script src="js/carousel.js" defer></script>
-
     <!-- ICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <title>🧪 Blog Académico CSS</title>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="u-flex-centered">
+      <a href="#" class="utility-flex-centered">
         <img src="img/Logos/Logo-04.png" alt="CSS Logo" class="logo" />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link u-flex-centered">Inicio</a></li>
-          <li><a href="#" class="main-nav-link u-flex-centered">Blog</a></li>
           <li>
-            <a href="#" class="main-nav-link u-flex-centered">Acerca de</a>
+            <a href="#" class="main-nav-link utility-flex-centered">Inicio</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link u-flex-centered">Contacto</a>
+            <a href="#" class="main-nav-link utility-flex-centered">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link utility-flex-centered">Acerca de</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link utility-flex-centered">Contacto</a>
           </li>
         </ul>
       </nav>
 
-      <button class="btn-mobile-nav u-flex-centered">
+      <button class="btn-mobile-nav utility-flex-centered">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
@@ -63,74 +54,55 @@
 
     <main>
       <section class="section-newest">
-        <div class="u-margin-bottom-med u-text-center">
+        <div class="utility-margin-bottom-med utility-text-center">
           <h2 class="heading-primary">Lo más nuevo</h2>
         </div>
 
         <div class="newest">
-          <div class="article__text__box">
-            <a
-              href="html/article-example.html"
-              class="title__article title__article__big"
-              >Título</a
-            >
-            <a href="#" class="author__article author__article__big"
-              >Por Autor</a
-            >
+          <div class="article-text-box">
+            <a href="html/article-example.html" class="title-article title-article-big">Título</a>
+            <span class="author-article author-article-big">Por Autor</span>
 
-            <p class="description__article description__article__big">
+            <p class="description-article description-article-big">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               error ea impedit optio enim voluptas ipsum vel similique et
               assumenda aperiam voluptatibus perferendis saepe odio consequuntur
               veniam, adipisci nostrum consectetur!
             </p>
 
-            <button class="btn-like btn-like__big">
+            <button class="btn-like btn-like-big">
               <ion-icon class="article-btn-like-icon" name="heart"> </ion-icon>
               <span class="article-score">12345</span>
             </button>
           </div>
 
-          <div class="newest__img__box u-flex-centered">
+          <div class="newest-img-box utility-flex-centered">
             <a href="html/article-example.html" class="img-btn">
-              <img src="img/img-1.jpg" alt="Laboratorio" class="article__img" />
+              <img src="img/img-1.jpg" alt="Laboratorio" class="article-img" />
             </a>
           </div>
         </div>
       </section>
 
       <section class="section-featured section">
-        <div class="u-margin-bottom-med u-text-center">
+        <div class="utility-margin-bottom-med utility-text-center">
           <h2 class="heading-primary">Destacado</h2>
         </div>
 
-        <div class="carousel__container u-container">
-          <div class="carousel__view">
-            <div class="carousel__item">
-              <article class="card__container">
-                <div class="card__img__box">
-                  <a
-                    href="html/article-example.html"
-                    class="img-btn u-height-full"
-                  >
-                    <img
-                      src="img/img-2.jpg"
-                      alt="Laboratorio"
-                      class="article__img"
-                    />
+        <div class="carousel-container utility-container">
+          <div class="carousel-view">
+            <div class="carousel-item">
+              <article class="card-container">
+                <div class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full">
+                    <img src="img/img-2.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </div>
-                <div class="article__text__box u-padding-small">
-                  <a
-                    href="html/article-example.html"
-                    class="title__article title__article__med"
-                    >Título</a
-                  >
-                  <a href="#" class="author__article author__article__small"
-                    >Por Autor</a
-                  >
+                <div class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <span class="author-article author-article-small">Por Autor</span>
 
-                  <p class="description__article description__article__med">
+                  <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam error ea impedit optio enim voluptas ipsum vel
                     similique et assumenda aperiam voluptatibus perferendis
@@ -147,31 +119,18 @@
               </article>
             </div>
 
-            <div class="carousel__item">
-              <article class="card__container">
-                <div class="card__img__box">
-                  <a
-                    href="html/article-example.html"
-                    class="img-btn u-height-full"
-                  >
-                    <img
-                      src="img/img-3.jpg"
-                      alt="Laboratorio"
-                      class="article__img"
-                    />
+            <div class="carousel-item">
+              <article class="card-container">
+                <div class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full">
+                    <img src="img/img-3.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </div>
-                <div class="article__text__box u-padding-small">
-                  <a
-                    href="html/article-example.html"
-                    class="title__article title__article__med"
-                    >Título</a
-                  >
-                  <a href="#" class="author__article author__article__small"
-                    >Por Autor</a
-                  >
+                <div class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <span class="author-article author-article-small">Por Autor</span>
 
-                  <p class="description__article description__article__med">
+                  <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam error ea impedit optio enim voluptas ipsum vel
                     similique et assumenda aperiam voluptatibus perferendis
@@ -188,31 +147,18 @@
               </article>
             </div>
 
-            <div class="carousel__item">
-              <article class="card__container">
-                <div class="card__img__box">
-                  <a
-                    href="html/article-example.html"
-                    class="img-btn u-height-full"
-                  >
-                    <img
-                      src="img/img-4.jpg"
-                      alt="Laboratorio"
-                      class="article__img"
-                    />
+            <div class="carousel-item">
+              <article class="card-container">
+                <div class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full" >
+                    <img src="img/img-4.jpg" alt="Laboratorio" class="article-img" />
                   </a>
                 </div>
-                <div class="article__text__box u-padding-small">
-                  <a
-                    href="html/article-example.html"
-                    class="title__article title__article__med"
-                    >Título</a
-                  >
-                  <a href="#" class="author__article author__article__small"
-                    >Por Autor</a
-                  >
+                <div class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <span class="author-article author-article-small">Por Autor</span>
 
-                  <p class="description__article description__article__med">
+                  <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam error ea impedit optio enim voluptas ipsum vel
                     similique et assumenda aperiam voluptatibus perferendis
@@ -229,31 +175,18 @@
               </article>
             </div>
 
-            <div class="carousel__item">
-              <article class="card__container">
-                <div class="card__img__box">
-                  <a
-                    href="html/article-example.html"
-                    class="img-btn u-height-full"
-                  >
-                    <img
-                      src="img/img-5.jpg"
-                      alt="Laboratorio"
-                      class="article__img"
-                    />
+            <div class="carousel-item">
+              <article class="card-container">
+                <div class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full">
+                    <img src="img/img-5.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </div>
-                <div class="article__text__box u-padding-small">
-                  <a
-                    href="html/article-example.html"
-                    class="title__article title__article__med"
-                    >Título</a
-                  >
-                  <a href="#" class="author__article author__article__small"
-                    >Por Autor</a
-                  >
+                <div class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                  <span class="author-article author-article-small" >Por Autor</span >
 
-                  <p class="description__article description__article__med">
+                  <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam error ea impedit optio enim voluptas ipsum vel
                     similique et assumenda aperiam voluptatibus perferendis
@@ -270,31 +203,18 @@
               </article>
             </div>
 
-            <div class="carousel__item">
-              <article class="card__container">
-                <div class="card__img__box">
-                  <a
-                    href="html/article-example.html"
-                    class="img-btn u-height-full"
-                  >
-                    <img
-                      src="img/img-6.jpg"
-                      alt="Laboratorio"
-                      class="article__img"
-                    />
+            <div class="carousel-item">
+              <article class="card-container">
+                <div class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full" >
+                    <img src="img/img-6.jpg" alt="Laboratorio" class="article-img" />
                   </a>
                 </div>
-                <div class="article__text__box u-padding-small">
-                  <a
-                    href="html/article-example.html"
-                    class="title__article title__article__med"
-                    >Título</a
-                  >
-                  <a href="#" class="author__article author__article__small"
-                    >Por Autor</a
-                  >
+                <div class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                  <span class="author-article author-article-small" >Por Autor</span >
 
-                  <p class="description__article description__article__med">
+                  <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam error ea impedit optio enim voluptas ipsum vel
                     similique et assumenda aperiam voluptatibus perferendis
@@ -311,31 +231,18 @@
               </article>
             </div>
 
-            <div class="carousel__item">
-              <article class="card__container">
-                <div class="card__img__box">
-                  <a
-                    href="html/article-example.html"
-                    class="img-btn u-height-full"
-                  >
-                    <img
-                      src="img/img-7.jpg"
-                      alt="Laboratorio"
-                      class="article__img"
-                    />
+            <div class="carousel-item">
+              <article class="card-container">
+                <div class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full" >
+                    <img src="img/img-7.jpg" alt="Laboratorio" class="article-img" />
                   </a>
                 </div>
-                <div class="article__text__box u-padding-small">
-                  <a
-                    href="html/article-example.html"
-                    class="title__article title__article__med"
-                    >Título</a
-                  >
-                  <a href="#" class="author__article author__article__small"
-                    >Por Autor</a
-                  >
+                <div class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                  <span class="author-article author-article-small" >Por Autor</span >
 
-                  <p class="description__article description__article__med">
+                  <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam error ea impedit optio enim voluptas ipsum vel
                     similique et assumenda aperiam voluptatibus perferendis
@@ -353,61 +260,42 @@
             </div>
           </div>
 
-          <button class="btn__carousel btn__carousel--left">
+          <button class="btn-carousel btn-carousel--left">
             <ion-icon name="chevron-back-outline"></ion-icon>
           </button>
-          <button class="btn__carousel btn__carousel--right">
+          <button class="btn-carousel btn-carousel--right">
             <ion-icon name="chevron-forward-outline"></ion-icon>
           </button>
         </div>
       </section>
 
       <section class="section-exploration">
-        <div class="u-margin-bottom-med u-text-center">
+        <div class="utility-margin-bottom-med utility-text-center">
           <h2 class="heading-primary">Explora</h2>
         </div>
 
-        <div class="exploration u-container">
-          <div class="exploration__tab-container u-margin-bottom-med">
-            <button
-              class="btn exploration__tab exploration__tab--1 exploration__tab--active"
-              data-tab="1"
-            >
-              Tema 1
+        <div class="exploration utility-container">
+          <div class="exploration-tab-container utility-margin-bottom-med">
+            <button class="btn exploration-tab exploration-tab--1 exploration-tab--active" data-tab="1" >
+               Tema 1 
             </button>
 
-            <button
-              class="btn exploration__tab exploration__tab--1"
-              data-tab="2"
-            >
+            <button class="btn exploration-tab exploration-tab--1" data-tab="2">
               Tema 2
             </button>
 
-            <button
-              class="btn exploration__tab exploration__tab--1"
-              data-tab="3"
-            >
+            <button class="btn exploration-tab exploration-tab--1" data-tab="3">
               Tema 3
             </button>
           </div>
 
-          <div
-            class="exploration__content exploration__content--1 exploration__content--active"
-          >
-            <div
-              class="exploration__main u-grid-2-cols u-padding-small exploration__block exploration__block--1"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__big"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+          <div class="exploration-content exploration-content--1 exploration-content--active" >
+            <div class="exploration-main utility-grid-2-cols utility-padding-small exploration-block exploration-block--1" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-big" >Título</a >
+                <span class="author-article author-article-big">Por Autor</span>
 
-                <p class="description__article description__article__med">
+                <p class="description-article description-article-med">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam voluptatibus perferendis saepe odio
@@ -421,31 +309,23 @@
                   <span class="article-score">12345</span>
                 </button>
               </div>
-              <div class="exploration__img__main u-flex-centered">
+              <div class="exploration-img-main utility-flex-centered">
                 <a href="html/article-example.html" class="img-btn">
                   <img
                     src="img/img-8.jpg"
                     alt="Laboratorio"
-                    class="article__img"
+                    class="article-img"
                   />
                 </a>
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--2"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--2" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -458,20 +338,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--3"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--3" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -484,20 +356,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--4"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--4" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -509,20 +373,12 @@
                 </button>
               </div>
             </div>
-            <div
-              class="u-padding-small exploration__block exploration__block--5"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--5" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -535,33 +391,18 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--6"
-            >
-              <div class="exploration__img__big">
-                <a
-                  href="html/article-example.html"
-                  class="img-btn u-height-full"
-                >
-                  <img
-                    src="img/img-1.jpg"
-                    alt="Laboratorio"
-                    class="article__img article__img__big"
-                  />
+            <div class="utility-padding-small exploration-block exploration-block--6" >
+              <div class="exploration-img-big">
+                <a href="html/article-example.html" class="img-btn utility-height-full" >
+                  <img src="img/img-1.jpg" alt="Laboratorio" class="article-img article-img-big" />
                 </a>
               </div>
 
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__med"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam
@@ -575,20 +416,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--7"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__med"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--7" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam Lorem ipsum dolor. Lorem ipsum, dolor sit
@@ -607,21 +440,13 @@
             </div>
           </div>
 
-          <div class="exploration__content exploration__content--2">
-            <div
-              class="exploration__main u-grid-2-cols u-padding-small exploration__block exploration__block--1"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__big"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+          <div class="exploration-content exploration-content--2">
+            <div class="exploration-main utility-grid-2-cols utility-padding-small exploration-block exploration-block--1" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-big" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__med">
+                <p class="description-article description-article-med">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam voluptatibus perferendis saepe odio
@@ -635,31 +460,23 @@
                   <span class="article-score">12345</span>
                 </button>
               </div>
-              <div class="exploration__img__main u-flex-centered">
+              <div class="exploration-img-main utility-flex-centered">
                 <a href="html/article-example.html" class="img-btn">
                   <img
                     src="img/img-3.jpg"
                     alt="Laboratorio"
-                    class="article__img"
+                    class="article-img"
                   />
                 </a>
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--2"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--2" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small">Por Autor</span>
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -672,20 +489,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--3"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--3" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -698,20 +507,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--4"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--4" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -723,20 +524,12 @@
                 </button>
               </div>
             </div>
-            <div
-              class="u-padding-small exploration__block exploration__block--5"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--5" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -749,33 +542,22 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--6"
-            >
-              <div class="exploration__img__big">
-                <a
-                  href="html/article-example.html"
-                  class="img-btn u-height-full"
-                >
+            <div class="utility-padding-small exploration-block exploration-block--6" >
+              <div class="exploration-img-big">
+                <a href="html/article-example.html" class="img-btn utility-height-full" >
                   <img
                     src="img/img-5.jpg"
                     alt="Laboratorio"
-                    class="article__img article__img__big"
+                    class="article-img article-img-big"
                   />
                 </a>
               </div>
 
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__med"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam
@@ -789,20 +571,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--7"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__med"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--7" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam Lorem ipsum dolor sit amet.
@@ -817,21 +591,13 @@
             </div>
           </div>
 
-          <div class="exploration__content exploration__content--3">
-            <div
-              class="exploration__main u-grid-2-cols u-padding-small exploration__block exploration__block--1"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__big"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+          <div class="exploration-content exploration-content--3">
+            <div class="exploration-main utility-grid-2-cols utility-padding-small exploration-block exploration-block--1" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-big" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__med">
+                <p class="description-article description-article-med">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam voluptatibus perferendis saepe odio
@@ -845,31 +611,23 @@
                   <span class="article-score">12345</span>
                 </button>
               </div>
-              <div class="exploration__img__main u-flex-centered">
+              <div class="exploration-img-main utility-flex-centered">
                 <a href="html/article-example.html" class="img-btn">
                   <img
                     src="img/img-2.jpg"
                     alt="Laboratorio"
-                    class="article__img"
+                    class="article-img"
                   />
                 </a>
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--2"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--2" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -882,20 +640,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--3"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--3" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small">Por Autor</span>
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -908,20 +658,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--4"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--4" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -933,20 +675,12 @@
                 </button>
               </div>
             </div>
-            <div
-              class="u-padding-small exploration__block exploration__block--5"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__small"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__small"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--5" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
+                <span class="author-article author-article-small" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit
                 </p>
@@ -959,33 +693,22 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--6"
-            >
-              <div class="exploration__img__big">
-                <a
-                  href="html/article-example.html"
-                  class="img-btn u-height-full"
-                >
+            <div class="utility-padding-small exploration-block exploration-block--6" >
+              <div class="exploration-img-big">
+                <a href="html/article-example.html" class="img-btn utility-height-full" >
                   <img
                     src="img/img-7.jpg"
                     alt="Laboratorio"
-                    class="article__img article__img__big"
+                    class="article-img article-img-big"
                   />
                 </a>
               </div>
 
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__med"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                <span class="author-article author-article-big" >Por Autor</span >
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam
@@ -999,20 +722,12 @@
               </div>
             </div>
 
-            <div
-              class="u-padding-small exploration__block exploration__block--7"
-            >
-              <div class="article__text__box">
-                <a
-                  href="html/article-example.html"
-                  class="title__article title__article__med"
-                  >Título</a
-                >
-                <a href="#" class="author__article author__article__big"
-                  >Por Autor</a
-                >
+            <div class="utility-padding-small exploration-block exploration-block--7" >
+              <div class="article-text-box">
+                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
+                <span class="author-article author-article-big">Por Autor</span>
 
-                <p class="description__article description__article__small">
+                <p class="description-article description-article-small">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   error ea impedit optio enim voluptas ipsum vel similique et
                   assumenda aperiam Lorem ipsum dolor sit amet.
@@ -1031,34 +746,34 @@
 
       <section class="section-newsletter">
         <div class="newsletter">
-          <div class="newsletter__form">
+          <div class="newsletter-form">
             <form action="#" class="form">
-              <div class="u-margin-bottom-med">
+              <div class="utility-margin-bottom-med">
                 <h2 class="heading-primary">Suscribete</h2>
               </div>
-              <div class="form__group">
+              <div class="form-group">
                 <input
                   type="text"
-                  class="form__input"
+                  class="form-input"
                   placeholder="Nombre Completo"
                   id="name"
                   required
                 />
-                <label for="name" class="form__label">Nombre Completo</label>
+                <label for="name" class="form-label">Nombre Completo</label>
               </div>
 
-              <div class="form__group">
+              <div class="form-group">
                 <input
                   type="email"
-                  class="form__input"
+                  class="form-input"
                   placeholder="Dirección Email"
                   id="email"
                   required
                 />
-                <label for="email" class="form__label">Dirección Email</label>
+                <label for="email" class="form-label">Dirección Email</label>
               </div>
 
-              <div class="form__group">
+              <div class="form-group">
                 <button class="btn-send">
                   <ion-icon name="send"></ion-icon>
                 </button>
@@ -1093,5 +808,7 @@
         derechos reservados.
       </p>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

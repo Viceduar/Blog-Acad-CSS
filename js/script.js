@@ -1,22 +1,22 @@
 /***********CONFIGURACIÓN DE EXPLORACIÓN*******************/
-const tabContainer = document.querySelector(".exploration__tab-container");
-const tabs = document.querySelectorAll(".exploration__tab");
-const expContent = document.querySelectorAll(".exploration__content");
+const tabContainer = document.querySelector(".exploration-tab-container");
+const tabs = document.querySelectorAll(".exploration-tab");
+const expContent = document.querySelectorAll(".exploration-content");
 
 tabContainer?.addEventListener("click", function (e) {
   const clicked = e.target;
 
-  if (!clicked.classList.contains("exploration__tab")) return;
+  if (!clicked.classList.contains("exploration-tab")) return;
 
-  tabs.forEach((t) => t.classList.remove("exploration__tab--active"));
-  clicked.classList.add("exploration__tab--active");
+  tabs.forEach((t) => t.classList.remove("exploration-tab--active"));
+  clicked.classList.add("exploration-tab--active");
 
   expContent.forEach((exp) =>
-    exp.classList.remove("exploration__content--active")
+    exp.classList.remove("exploration-content--active")
   );
   document
-    .querySelector(`.exploration__content--${clicked.dataset.tab}`)
-    .classList.add("exploration__content--active");
+    .querySelector(`.exploration-content--${clicked.dataset.tab}`)
+    .classList.add("exploration-content--active");
 });
 
 /***********CONFIGURACIÓN DE NAV MOBILE*******************/

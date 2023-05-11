@@ -13,7 +13,7 @@
   letter-spacing: 0.1rem;
 }
 
-.title__article {
+.title-article {
   &:link,
   &:visited {
     font-weight: 700;
@@ -30,57 +30,55 @@
     color: $color-secondary;
   }
 
-  &__big {
+  &-big {
     font-size: 3.6rem;
   }
 
-  &__med {
+  &-med {
     font-size: 3rem;
   }
 
-  &__small {
+  &-small {
     font-size: 2.4rem;
   }
 }
 
-.author__article {
-  &:link,
-  &:visited {
-    font-weight: 700;
-    width: fit-content;
-    color: $color-black;
-    text-decoration: none;
-    display: inline-block;
+.author-article {
 
-    transition: all 0.2s;
-  }
+  font-weight: 700;
+  width: fit-content;
+  color: $color-black;
+  text-decoration: none;
+  display: inline-block;
 
-  &:hover,
-  &:active {
+  transition: all 0.2s;
+  
+
+  &:hover{
     color: $color-secondary;
   }
 
-  &__big {
+  &-big {
     font-size: 1.6rem;
   }
 
-  &__small {
+  &-small {
     font-size: 1.4rem;
   }
 }
 
-.description__article {
-  &__big {
+.description-article {
+  &-big {
     font-size: 2rem;
     line-height: 1.5;
   }
 
-  &__med {
+  &-med {
     font-size: 1.6rem;
     line-height: 1.4;
   }
 
-  &__small {
+  &-small {
     font-size: 1.4rem;
     line-height: 1.1;
 
@@ -91,7 +89,7 @@
   }
 }
 
-.p__article {
+.p-article {
   font-size: 1.8rem;
   text-align: justify;
   margin-bottom: 2.4rem;
@@ -101,7 +99,7 @@
     font-size: 2.2rem;
   }
 
-  &__quote {
+  &-quote {
     border: 1px solid $color-primary;
     border-radius: 5px;
     padding: 2.4rem 3.6rem;
@@ -110,7 +108,7 @@
   }
 }
 
-.date__article {
+.date-article {
   font-size: 1.4rem;
   font-weight: 700;
   color: $color-gray-light;
