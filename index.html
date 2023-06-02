@@ -4,22 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧪 Blog Académico CSS</title>
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- ICONS -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <title>🧪 Blog Académico CSS</title>
+    
   </head>
   <body id='body'>
+
+    <!-- ********** NAVIGATION BAR *********** -->
+    
     <header class="header">
       <a href="#" class="utility-flex-centered">
         <img src="img/Logos/Logo-04.png" alt="CSS Logo" class="logo" />
@@ -48,18 +54,25 @@
       </button>
     </header>
 
+
+    <!-- ********** RETURN BUTTON *********** -->
+
     <button class="btn-return">
       <ion-icon name="arrow-up-outline"></ion-icon>
     </button>
 
+
+
+    <!-- ********** MAIN  *********** -->
+
     <main>
       <section class="section-newest">
-        <div class="utility-margin-bottom-med utility-text-center">
+        <header class="utility-margin-bottom-med utility-text-center">
           <h2 class="heading-primary">Lo más nuevo</h2>
-        </div>
+        </header>
 
-        <div class="newest">
-          <div class="article-text-box">
+        <article class="newest">
+          <section class="article-text-box">
             <a href="html/article-example.html" class="title-article title-article-big">Título</a>
             <span class="author-article author-article-big">Por Autor</span>
 
@@ -69,36 +82,32 @@
               assumenda aperiam voluptatibus perferendis saepe odio consequuntur
               veniam, adipisci nostrum consectetur!
             </p>
+            <a href="html/article-example.html" class="article-link">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+          </section>
 
-            <button class="btn-like btn-like-big">
-              <ion-icon class="article-btn-like-icon" name="heart"> </ion-icon>
-              <span class="article-score">12345</span>
-            </button>
-          </div>
-
-          <div class="newest-img-box utility-flex-centered">
+          <section class="newest-img-box utility-flex-centered">
             <a href="html/article-example.html" class="img-btn">
               <img src="img/img-1.jpg" alt="Laboratorio" class="article-img" />
             </a>
-          </div>
-        </div>
+          </section>
+        </article>
       </section>
 
       <section class="section-featured section">
-        <div class="utility-margin-bottom-med utility-text-center">
+        <section class="utility-margin-bottom-med utility-text-center">
           <h2 class="heading-primary">Destacado</h2>
-        </div>
+        </section>
 
-        <div class="carousel-container utility-container">
-          <div class="carousel-view">
-            <div class="carousel-item">
+        <section class="carousel-container utility-container">
+          <main class="carousel-view">
+            <article class="carousel-item">
               <article class="card-container">
-                <div class="card-img-box">
+                <section class="card-img-box">
                   <a href="html/article-example.html" class="img-btn utility-height-full">
                     <img src="img/img-2.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
-                </div>
-                <div class="article-text-box utility-padding-small">
+                </section>
+                <section class="article-text-box utility-padding-small">
                   <a href="html/article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
@@ -110,23 +119,19 @@
                     consectetur!
                   </p>
 
-                  <button class="btn-like">
-                    <ion-icon class="article-btn-like-icon" name="heart">
-                    </ion-icon>
-                    <span class="article-score">12345</span>
-                  </button>
-                </div>
+                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                </section>
               </article>
-            </div>
+            </article>
 
-            <div class="carousel-item">
+            <article class="carousel-item">
               <article class="card-container">
-                <div class="card-img-box">
+                <section class="card-img-box">
                   <a href="html/article-example.html" class="img-btn utility-height-full">
                     <img src="img/img-3.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
-                </div>
-                <div class="article-text-box utility-padding-small">
+                </section>
+                <section class="article-text-box utility-padding-small">
                   <a href="html/article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
@@ -138,23 +143,19 @@
                     consectetur!
                   </p>
 
-                  <button class="btn-like">
-                    <ion-icon class="article-btn-like-icon" name="heart">
-                    </ion-icon>
-                    <span class="article-score">12345</span>
-                  </button>
-                </div>
+                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                </section>
               </article>
-            </div>
+            </article>
 
-            <div class="carousel-item">
+            <article class="carousel-item">
               <article class="card-container">
-                <div class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full" >
-                    <img src="img/img-4.jpg" alt="Laboratorio" class="article-img" />
+                <section class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full">
+                    <img src="img/img-4.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
-                </div>
-                <div class="article-text-box utility-padding-small">
+                </section>
+                <section class="article-text-box utility-padding-small">
                   <a href="html/article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
@@ -166,25 +167,21 @@
                     consectetur!
                   </p>
 
-                  <button class="btn-like">
-                    <ion-icon class="article-btn-like-icon" name="heart">
-                    </ion-icon>
-                    <span class="article-score">12345</span>
-                  </button>
-                </div>
+                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                </section>
               </article>
-            </div>
+            </article>
 
-            <div class="carousel-item">
+            <article class="carousel-item">
               <article class="card-container">
-                <div class="card-img-box">
+                <section class="card-img-box">
                   <a href="html/article-example.html" class="img-btn utility-height-full">
                     <img src="img/img-5.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
-                </div>
-                <div class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                  <span class="author-article author-article-small" >Por Autor</span >
+                </section>
+                <section class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -194,25 +191,21 @@
                     consectetur!
                   </p>
 
-                  <button class="btn-like">
-                    <ion-icon class="article-btn-like-icon" name="heart">
-                    </ion-icon>
-                    <span class="article-score">12345</span>
-                  </button>
-                </div>
+                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                </section>
               </article>
-            </div>
+            </article>
 
-            <div class="carousel-item">
+            <article class="carousel-item">
               <article class="card-container">
-                <div class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full" >
-                    <img src="img/img-6.jpg" alt="Laboratorio" class="article-img" />
+                <section class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full">
+                    <img src="img/img-6.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
-                </div>
-                <div class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                  <span class="author-article author-article-small" >Por Autor</span >
+                </section>
+                <section class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -222,25 +215,21 @@
                     consectetur!
                   </p>
 
-                  <button class="btn-like">
-                    <ion-icon class="article-btn-like-icon" name="heart">
-                    </ion-icon>
-                    <span class="article-score">12345</span>
-                  </button>
-                </div>
+                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                </section>
               </article>
-            </div>
+            </article>
 
-            <div class="carousel-item">
+            <article class="carousel-item">
               <article class="card-container">
-                <div class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full" >
-                    <img src="img/img-7.jpg" alt="Laboratorio" class="article-img" />
+                <section class="card-img-box">
+                  <a href="html/article-example.html" class="img-btn utility-height-full">
+                    <img src="img/img-7.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
-                </div>
-                <div class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                  <span class="author-article author-article-small" >Por Autor</span >
+                </section>
+                <section class="article-text-box utility-padding-small">
+                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -250,15 +239,11 @@
                     consectetur!
                   </p>
 
-                  <button class="btn-like">
-                    <ion-icon class="article-btn-like-icon" name="heart">
-                    </ion-icon>
-                    <span class="article-score">12345</span>
-                  </button>
-                </div>
+                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                </section>
               </article>
-            </div>
-          </div>
+            </article>
+          </main>
 
           <button class="btn-carousel btn-carousel--left">
             <ion-icon name="chevron-back-outline"></ion-icon>
@@ -266,482 +251,7 @@
           <button class="btn-carousel btn-carousel--right">
             <ion-icon name="chevron-forward-outline"></ion-icon>
           </button>
-        </div>
-      </section>
-
-      <section class="section-exploration">
-        <div class="utility-margin-bottom-med utility-text-center">
-          <h2 class="heading-primary">Explora</h2>
-        </div>
-
-        <div class="exploration utility-container">
-          <div class="exploration-tab-container utility-margin-bottom-med">
-            <button class="btn exploration-tab exploration-tab--1 exploration-tab--active" data-tab="1" >
-               Tema 1 
-            </button>
-
-            <button class="btn exploration-tab exploration-tab--1" data-tab="2">
-              Tema 2
-            </button>
-
-            <button class="btn exploration-tab exploration-tab--1" data-tab="3">
-              Tema 3
-            </button>
-          </div>
-
-          <div class="exploration-content exploration-content--1 exploration-content--active" >
-            <div class="exploration-main utility-grid-2-cols utility-padding-small exploration-block exploration-block--1" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-big" >Título</a >
-                <span class="author-article author-article-big">Por Autor</span>
-
-                <p class="description-article description-article-med">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam voluptatibus perferendis saepe odio
-                  consequuntur veniam, adipisci nostrum consectetur! asperiores
-                  in vel cum rem.
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-              <div class="exploration-img-main utility-flex-centered">
-                <a href="html/article-example.html" class="img-btn">
-                  <img
-                    src="img/img-8.jpg"
-                    alt="Laboratorio"
-                    class="article-img"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--2" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--3" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--4" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-            <div class="utility-padding-small exploration-block exploration-block--5" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--6" >
-              <div class="exploration-img-big">
-                <a href="html/article-example.html" class="img-btn utility-height-full" >
-                  <img src="img/img-1.jpg" alt="Laboratorio" class="article-img article-img-big" />
-                </a>
-              </div>
-
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--7" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam Lorem ipsum dolor. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Perferendis similique
-                  quibusdam dolor dolorum error aperiam corporis incidunt iusto
-                  pariatur! Dolorum at, et sequi assumenda ipsum laborum magni
-                  quam cum pariatur?
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="exploration-content exploration-content--2">
-            <div class="exploration-main utility-grid-2-cols utility-padding-small exploration-block exploration-block--1" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-big" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-med">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam voluptatibus perferendis saepe odio
-                  consequuntur veniam, adipisci nostrum consectetur! asperiores
-                  in vel cum rem.
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-              <div class="exploration-img-main utility-flex-centered">
-                <a href="html/article-example.html" class="img-btn">
-                  <img
-                    src="img/img-3.jpg"
-                    alt="Laboratorio"
-                    class="article-img"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--2" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small">Por Autor</span>
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--3" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--4" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-            <div class="utility-padding-small exploration-block exploration-block--5" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--6" >
-              <div class="exploration-img-big">
-                <a href="html/article-example.html" class="img-btn utility-height-full" >
-                  <img
-                    src="img/img-5.jpg"
-                    alt="Laboratorio"
-                    class="article-img article-img-big"
-                  />
-                </a>
-              </div>
-
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--7" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam Lorem ipsum dolor sit amet.
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="exploration-content exploration-content--3">
-            <div class="exploration-main utility-grid-2-cols utility-padding-small exploration-block exploration-block--1" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-big" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-med">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam voluptatibus perferendis saepe odio
-                  consequuntur veniam, adipisci nostrum consectetur! asperiores
-                  in vel cum rem.
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-              <div class="exploration-img-main utility-flex-centered">
-                <a href="html/article-example.html" class="img-btn">
-                  <img
-                    src="img/img-2.jpg"
-                    alt="Laboratorio"
-                    class="article-img"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--2" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--3" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small">Por Autor</span>
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--4" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-            <div class="utility-padding-small exploration-block exploration-block--5" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-small" >Título</a >
-                <span class="author-article author-article-small" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--6" >
-              <div class="exploration-img-big">
-                <a href="html/article-example.html" class="img-btn utility-height-full" >
-                  <img
-                    src="img/img-7.jpg"
-                    alt="Laboratorio"
-                    class="article-img article-img-big"
-                  />
-                </a>
-              </div>
-
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                <span class="author-article author-article-big" >Por Autor</span >
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="utility-padding-small exploration-block exploration-block--7" >
-              <div class="article-text-box">
-                <a href="html/article-example.html" class="title-article title-article-med" >Título</a >
-                <span class="author-article author-article-big">Por Autor</span>
-
-                <p class="description-article description-article-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  error ea impedit optio enim voluptas ipsum vel similique et
-                  assumenda aperiam Lorem ipsum dolor sit amet.
-                </p>
-
-                <button class="btn-like">
-                  <ion-icon class="article-btn-like-icon" name="heart">
-                  </ion-icon>
-                  <span class="article-score">12345</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </section>
 
       <section class="section-newsletter">
