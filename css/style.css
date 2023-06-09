@@ -1,10 +1,31 @@
-@charset "UTF-8";
+/******************/
+/* CSS VARIABLES */
+/****************/
 
 :root{
-  --blue:#14406c;
-  --dark-blue:#0a1727;
-  --dark-cream:#e2cd66;
-  --light-cream:#edd9b7;
+    
+    /***************/
+    /*** COLORS ***/
+    /*************/
+    --blue:#14406c;
+    --dark-blue:#0a1727;
+    --dark-cream:#e2cd66;
+    --light-cream:#edd9b7;
+    
+    /*************/
+    /*** SIZE ***/
+    /***********/
+
+    --navegation-height:50px;
+    --settings-width:400px;
+
+    /*******************/
+    /*** Font sizes ***/
+    /*****************/
+
+    /* Title font size */
+    --min-title-size:32px;
+    --max-title-size:52px;
 }
 
 /*
@@ -52,6 +73,235 @@ body {
   line-height: 1.7;
   box-sizing: border-box;
   overflow-x: hidden; }
+
+
+  /**************/
+/***GENERAL***/
+/************/
+
+.non-scroll{
+    overflow: hidden;
+}
+
+.flex-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*************/
+/***HEADER***/
+/***********/
+
+.header-container{
+    background-color: var(--dark-blue);
+    height: var(--navegation-height);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo-img{
+    height: 25px;
+    padding: 12.5px;
+    width: auto;
+}
+
+.menu-container{
+    background: linear-gradient(180deg, var(--dark-blue), var(--blue));
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    left: -300vw;
+    padding-top: 10px;
+    position: fixed;
+    top: 50px;
+    transition-duration: 0.35s;
+    width: 100%;
+    z-index: 3;
+}
+
+.menu-link{
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    height: fit-content;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+}
+
+.menu-selection{
+    text-decoration: underline;
+    text-decoration-color: var(--dark-cream);
+    text-decoration-thickness: 3px;
+}
+
+.menu-burger-button{
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}
+
+.menu-settings-button{
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 50px;
+    border: none;
+    bottom: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    right:10px;
+    transition-duration: 0.35s;
+    width: 50px;
+    z-index: 2;
+}
+
+.show-menu{
+    left: 0px;
+}   
+
+
+/*************/
+/***FOOTER***/
+/***********/
+
+.footer-container{
+    background-color: var(--dark-blue);
+    height: fit-content;
+    padding: 5px 0;
+}
+
+.footer-container p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.social-media{
+    background-color: var(--light-cream);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    width: 30px;
+}
+
+/********************/
+/* Responsive text */
+/******************/
+
+/* sintax  linear responsive text [min font size + (max font size - min font size) * ((viewport width - min viewport width) / (max viewport width - min viewport width))] */
+
+.fluid-font-title{
+    font-size: var(--min-title-size)
+}
+
+/* Scren with a width equal or bigger than 320px  */
+@media screen and (min-width: 320px) {
+    
+    .fluid-font-title{
+        font-size: calc(var(--min-title-size) + 20 * ((100vw - 320px) / 1600)) ;
+    }
+}
+
+
+/* Scren with a width equal or bigger than 1920px  */
+@media screen and (min-width: 1920px) {
+
+    .fluid-font-title{
+        font-size: var(--max-title-size);
+    }
+}
+
+/**********************/
+/* Responsive design */
+/********************/
+
+/**********************/
+/* Mobile (landscape)*/
+/********************/
+
+/*** Only works for mobiles in landscape with resulution of height : 412 px with width: > 412 px ***/
+
+@media (max-height:412px) and (orientation:landscape){
+    
+    .settings-sub-sub-container{
+        flex-wrap:nowrap;
+    }
+}
+
+/******************/
+/* DESKTOP STYLE */
+/****************/
+
+/***********************************/
+/* Desktop and tablet (landscape) */
+/*********************************/
+
+/*********************/
+/* Only break point */
+/*******************/
+/* 
+   --------------------------  Explication -> ipad resolution is 768 x 1024px in vertical postion
+   |                        |                 is considered as a smartphone, but in 1024 x 768px 
+   |                        |                 is considered as a computer, this break point consider
+   |     916 x 412 px       |                 that only exist two design mobile or desktop,the bigger
+   |                        |                 resolution in phone founded was 411 x 812px, so we take
+   |                        |                 the limit values of resolution as following: width:768+1px
+   --------------------------                 and height:411+1px up this are computer down this are a phone
+*/
+
+@media (min-height:412px) and (min-width: 916px) {
+    
+    /*************/
+    /***HEADER***/
+    /***********/
+
+    .menu-burger-button{
+        display: none;
+    }
+
+    .menu-container{
+        align-items: center;
+        background: transparent;
+        flex-direction: row;
+        height: 50px;
+        justify-content: center;
+        padding-top: 0;
+        position: static;
+        width: fit-content;
+    }
+
+    .menu-settings-button{
+        display: none;
+    }
+
+}
+
+
+/***********/
+/***MAIN***/
+/*********/
+
 
 
 .heading-primary {
@@ -244,42 +494,8 @@ body {
       align-self: auto; }
 
 
-.btn-liked{
-  color: #fff;
-  background-color: #5757ce;
-  border: 1px solid #5757ce;
-  border-radius: 5px;
-}
 
-  
-.btn-mobile-nav {
-  display: none;
-  width: 3.6rem;
-  height: 3.6rem;
-  font-size: 2.4rem;
-  background-color: inherit;
-  border-radius: 100px;
-  border: 1px solid #fff; }
-  .btn-mobile-nav:hover {
-    cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
-    .btn-mobile-nav {
-      display: flex; } }
-  @media only screen and (max-width: tab-port) {
-    .btn-mobile-nav {
-      display: flex; } }
 
-.icon-mobile-nav {
-  color: #fff; }
-
-.icon-mobile-nav[name="close-outline"] {
-  display: none; }
-
-.nav-open .icon-mobile-nav[name="close-outline"] {
-  display: block; }
-
-.nav-open .icon-mobile-nav[name="menu-outline"] {
-  display: none; }
 
 .btn-return {
   display: inline-block;
@@ -303,7 +519,7 @@ body {
   align-items: center;
   border-radius: 3px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;}
   .img-btn > img {
     transition: all 0.2s; }
   .img-btn:hover > img {
@@ -413,117 +629,7 @@ body {
   height: 40%; }
 
 
-.footer {
-  background-color: #5757ce;
-  color: #fff;
-  padding: 3.5rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.6rem; }
-  .footer-link:link, .footer-link:visited {
-    color: #fff; }
 
-.social-links {
-  list-style: none;
-  font-size: 2.4rem;
-  display: flex;
-  gap: 1.2rem; }
-
-.copyright {
-  font-size: 1.2rem; }
-
-.header {
-  background-color: var(--dark-blue);
-  color: #fff;
-  position: sticky;
-  top: 0%;
-  z-index: 999;
-  font-size: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6.4rem;
-  padding: 0 2.4rem; }
-
-.logo {
-  width: auto;
-  height: 4rem; }
-
-@media only screen and (max-width: 56.25em) {
-  .main-nav {
-    background-color: var(--blue);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    opacity: 0%;
-    pointer-events: none;
-    visibility: hidden; }
-    .nav-open .main-nav {
-      opacity: 1;
-      pointer-events: auto;
-      visibility: visible;
-      transform: translateX(0); }
-    .main-nav .main-nav-list {
-      flex-direction: column;
-      gap: 4.8rem; }
-    .main-nav .main-nav-link:link,
-    .main-nav .main-nav-link:visited {
-      font-size: 3rem; } }
-
-@media only screen and (max-width: tab-port) {
-  .main-nav {
-    background-color: var(--blue);;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    opacity: 0%;
-    pointer-events: none;
-    visibility: hidden; }
-    .nav-open .main-nav {
-      opacity: 1;
-      pointer-events: auto;
-      visibility: visible;
-      transform: translateX(0); }
-    .main-nav .main-nav-list {
-      flex-direction: column;
-      gap: 4.8rem; }
-    .main-nav .main-nav-link:link,
-    .main-nav .main-nav-link:visited {
-      font-size: 3rem; } }
-
-.main-nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4.8rem; }
-
-.main-nav-link:link, .main-nav-link:visited {
-  color: inherit;
-  text-decoration: none;
-  border-radius: 100px;
-  padding: 0.8rem 1.2rem;
-  transition: all 0.2s; }
-
-.main-nav-link:hover, .main-nav-link:active {
-  color: #5757ce;
-  background-color: #eaebfa; }
 
 .newest {
   max-width: 130rem;
@@ -666,14 +772,15 @@ body {
   font-size: 1.6rem;
   font-weight: 700; }
 
-.author-links {
+.author-links{
   display: flex;
   gap: 1.2rem;
   list-style: none;
-  justify-content: center; }
+  justify-content: center; 
+  color: var(--dark-blue);}
 
 .author-link {
-  color: #5757ce;
+  color: var(--blue);
   font-size: 2rem; }
 
 .author-info {

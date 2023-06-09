@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <title>Blog Académico CSS</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🧪 Blog Académico CSS</title>
+    <link rel="icon" href="../img/Logos/icon.png" >
+    
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- ICONS -->
     <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -23,34 +25,24 @@
     
   </head>
   <body id='body'>
+    <main id="app" >
+
+   
 
     <!-- ********** NAVIGATION BAR *********** -->
     
-    <header class="header">
-      <a href="#" class="utility-flex-centered">
-        <img src="img/Logos/Logo-04.png" alt="CSS Logo" class="logo" />
-      </a>
-
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Inicio</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Blog</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Acerca de</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Contacto</a>
-          </li>
-        </ul>
+    <header class="header-container flex-container">
+      <img class="logo-img" src="../img/Logos/fennexLogo.svg">
+      <nav id="navigationMenu" class="menu-container">
+          <a class="menu-link">INICIO</a>
+          <a class="menu-link">BLOG</a>
+          <a class="menu-link">ACERCA DE</a>
+          <a class="menu-link menu-selection">DEMO</a>
+          <a class="menu-link">CSS</a>
+          <a class="menu-link">CONTACTO</a>
       </nav>
-
-      <button class="btn-mobile-nav utility-flex-centered">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      <button class="menu-burger-button" @click="showMenu('burger')">
+          <i class="fa-solid fa-bars"></i>
       </button>
     </header>
 
@@ -73,7 +65,7 @@
 
         <article class="newest">
           <section class="article-text-box">
-            <a href="html/article-example.html" class="title-article title-article-big">Título</a>
+            <a href="./article-example.html" class="title-article title-article-big">Título</a>
             <span class="author-article author-article-big">Por Autor</span>
 
             <p class="description-article description-article-big">
@@ -82,12 +74,12 @@
               assumenda aperiam voluptatibus perferendis saepe odio consequuntur
               veniam, adipisci nostrum consectetur!
             </p>
-            <a href="html/article-example.html" class="article-link">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+            <a href="./article-example.html" class="article-link">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
           </section>
 
           <section class="newest-img-box utility-flex-centered">
-            <a href="html/article-example.html" class="img-btn">
-              <img src="img/img-1.jpg" alt="Laboratorio" class="article-img" />
+            <a href="./article-example.html" class="img-btn">
+              <img src="../img/img-1.jpg" alt="Laboratorio" class="article-img" />
             </a>
           </section>
         </article>
@@ -103,12 +95,12 @@
             <article class="carousel-item">
               <article class="card-container">
                 <section class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full">
-                    <img src="img/img-2.jpg" alt="Laboratorio" class="article-img"/>
+                  <a href="./article-example.html" class="img-btn utility-height-full">
+                    <img src="../img/img-2.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </section>
                 <section class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <a href="./article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
@@ -119,7 +111,7 @@
                     consectetur!
                   </p>
 
-                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                  <a href="./article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
                 </section>
               </article>
             </article>
@@ -127,12 +119,12 @@
             <article class="carousel-item">
               <article class="card-container">
                 <section class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full">
-                    <img src="img/img-3.jpg" alt="Laboratorio" class="article-img"/>
+                  <a href="./article-example.html" class="img-btn utility-height-full">
+                    <img src="../img/img-3.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </section>
                 <section class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <a href="./article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
@@ -143,7 +135,7 @@
                     consectetur!
                   </p>
 
-                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                  <a href="./article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
                 </section>
               </article>
             </article>
@@ -151,12 +143,12 @@
             <article class="carousel-item">
               <article class="card-container">
                 <section class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full">
-                    <img src="img/img-4.jpg" alt="Laboratorio" class="article-img"/>
+                  <a href="./article-example.html" class="img-btn utility-height-full">
+                    <img src="../img/img-4.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </section>
                 <section class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <a href="./article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
@@ -167,7 +159,7 @@
                     consectetur!
                   </p>
 
-                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                  <a href="./article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
                 </section>
               </article>
             </article>
@@ -175,12 +167,12 @@
             <article class="carousel-item">
               <article class="card-container">
                 <section class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full">
-                    <img src="img/img-5.jpg" alt="Laboratorio" class="article-img"/>
+                  <a href="./article-example.html" class="img-btn utility-height-full">
+                    <img src="../img/img-5.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </section>
                 <section class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <a href="./article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
@@ -191,7 +183,7 @@
                     consectetur!
                   </p>
 
-                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                  <a href="./article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
                 </section>
               </article>
             </article>
@@ -199,12 +191,12 @@
             <article class="carousel-item">
               <article class="card-container">
                 <section class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full">
-                    <img src="img/img-6.jpg" alt="Laboratorio" class="article-img"/>
+                  <a href="./article-example.html" class="img-btn utility-height-full">
+                    <img src="../img/img-6.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </section>
                 <section class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <a href="./article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
@@ -215,7 +207,7 @@
                     consectetur!
                   </p>
 
-                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                  <a href="./article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
                 </section>
               </article>
             </article>
@@ -223,12 +215,12 @@
             <article class="carousel-item">
               <article class="card-container">
                 <section class="card-img-box">
-                  <a href="html/article-example.html" class="img-btn utility-height-full">
-                    <img src="img/img-7.jpg" alt="Laboratorio" class="article-img"/>
+                  <a href="./article-example.html" class="img-btn utility-height-full">
+                    <img src="../img/img-7.jpg" alt="Laboratorio" class="article-img"/>
                   </a>
                 </section>
                 <section class="article-text-box utility-padding-small">
-                  <a href="html/article-example.html" class="title-article title-article-med">Título</a>
+                  <a href="./article-example.html" class="title-article title-article-med">Título</a>
                   <span class="author-article author-article-small">Por Autor</span>
 
                   <p class="description-article description-article-med">
@@ -239,7 +231,7 @@
                     consectetur!
                   </p>
 
-                  <a href="html/article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
+                  <a href="./article-example.html" class="article-link-small">Seguir leyendo <ion-icon class="arrow-dropright" name="caret-forward-sharp"></ion-icon></a>
                 </section>
               </article>
             </article>
@@ -263,7 +255,7 @@
         </header>
 
         <main class="newsletter-content">
-          <img class="form-img" src="img/newsletter.jpg">
+          <img class="form-img" src="../img/newsletter.jpg">
           <form class="newsletter-form">
             <h3>¡Enterate de las novedades!</h3>
             <span>Nombre</span>
@@ -280,33 +272,25 @@
 
 <!-- *************** FOOTER *************** -->
 
-    <footer class="footer">
-      <ul class="social-links">
-        <li>
-          <a href="#" class="footer-link"
-            ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="#" class="footer-link"
-            ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="#" class="footer-link"
-            ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-          ></a>
-        </li>
-      </ul>
-
-      <p class="copyright">
-        Copyright &copy; 2023 por Chemical Science for Students. Todos los
-        derechos reservados.
-      </p>
+    <footer class="footer-container">
+      <p>Copyright ©2023 CSS</p>
+      <section class="flex-container">
+          <a class="social-media flex-container"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-tiktok"></i></a>
+      </section>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="js/carousel.js"></script>
 
+
+  </main>
   </body>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script type="text/javascript" src="../js/app.js" defer></script>
+  <script src="../js/fontAsome.min.js" type="text/javascript" defer></script>
+  <!-- <script src="../js/script.js" defer></script> -->
+
+  
 </html>

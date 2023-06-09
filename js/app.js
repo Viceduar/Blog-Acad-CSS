@@ -1,5 +1,76 @@
-'use strict';
+const { createApp } = Vue
 
+  createApp({
+    data() {
+      return {
+        isMobile:/Mobile/.test(navigator.userAgent),
+        currentSection:'',
+    }},
+    mounted(){
+       
+    },
+    methods:{
+        /**
+         * Display the clicked menu in mobile view
+         * @param {String} type - Type of menu
+         */
+        showMenu(type){
+            // Check the type menu and add or remove class to show menu
+            (type=="burger" && this.curretSection=="graph") ? (navigationMenu.classList.toggle("show-menu"),settingsButton.classList.toggle("hide-button")) :
+             type=="burger"                            ?  navigationMenu.classList.toggle("show-menu") 
+                                                       :  settingsMenu.classList.toggle("show-menu");
+
+            // Explicit code for burger menu                                           
+            // if (type=="burger" && this.currentSection=="graph") {
+            //     navigationMenu.classList.toggle("show-menu")
+            //     settingsButton.classList.toggle("hide-button")
+            // }else if( type=="burger"){
+            //     navigationMenu.classList.toggle("show-menu")
+            // }else{
+            //     settingsMenu.classList.toggle("show-menu");
+            // }
+
+            // Remove scroll in body in desktop, more estetic
+            if (!this.isMobile) {
+                body.classList.toggle("non-scroll")
+            }
+        }
+
+    }
+  }).mount('#app')
+
+
+/***********CONFIGURACIÓN DE BTN-RETURN*******************/
+
+// Al hacer click en el botón de regreso, esta función nos llevará al inicio de la página.
+const btnReturn = document.querySelector(".btn-return");
+
+btnReturn.addEventListener("click", function returnButton () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+/***********CLICK EN BOTON DE LIKE*******************/
+
+
+// Cuando demos click en un elemento que sea un botón, a este se le agregará una nueva clase 
+// que nos indicará que ya se ha dado like.
+document.addEventListener('click', function buttonLiked(event) {
+  if(event.target.classList.contains('btn-like')){
+    event.target.classList.toggle('btn-liked')
+  }else if(event.target.parentElement.classList.contains('btn-like')){
+    event.target.parentElement.classList.toggle('btn-liked')
+  }
+});
+
+
+
+
+// *****************************************
+// ****************CAROUSEL*****************
+// *****************************************
 const itemsEl = document.querySelectorAll(".carousel-item");
 const btnLeft = document.querySelector(".btn-carousel--left");
 const btnRight = document.querySelector(".btn-carousel--right");
@@ -109,17 +180,3 @@ btnLeft.addEventListener("click", function () {
     scrollsRight--;
   }
 });
-
-
-/***********CONFIGURACIÓN DE BTN-RETURN*******************/
-
-// Al hacer click en el botón de regreso, esta función nos llevará al inicio de la página.
-const btnReturn = document.querySelector(".btn-return");
-
-btnReturn.addEventListener("click", function returnButton () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-

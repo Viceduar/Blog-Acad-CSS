@@ -1,68 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <title>Blog Académico CSS</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🧪 Blog Académico CSS</title>
+    <link rel="icon" href="../img/Logos/icon.png" >
+    
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- STYLE -->
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- ICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
 
 
 
-  <body>
-    <header class="header">
-      <a href="#" class="utility-flex-centered">
-        <img src="../img/Logos/Logo-04.png" alt="CSS Logo" class="logo" />
-      </a>
-
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Inicio</a>
-          </li>
-          <li>
-            <a href="../index.html" class="main-nav-link utility-flex-centered">Blog</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Acerca de</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link utility-flex-centered">Contacto</a>
-          </li>
-        </ul>
+  <body id='body'>
+    <main id="app">
+    <!-- ********** NAVIGATION BAR *********** -->
+    
+    <header class="header-container flex-container">
+      <img class="logo-img" src="../img/Logos/fennexLogo.svg">
+      <nav id="navigationMenu" class="menu-container">
+          <a class="menu-link">INICIO</a>
+          <a class="menu-link" href="index.html">BLOG</a>
+          <a class="menu-link">ACERCA DE</a>
+          <a class="menu-link menu-selection">DEMO</a>
+          <a class="menu-link">CSS</a>
+          <a class="menu-link">CONTACTO</a>
       </nav>
-
-      <button class="btn-mobile-nav utility-flex-centered">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      <button class="menu-burger-button" @click="showMenu('burger')">
+          <i class="fa-solid fa-bars"></i>
       </button>
     </header>
 
+      <!-- ********** RETURN BUTTON *********** -->
     <button class="btn-return">
       <ion-icon name="arrow-up-outline"></ion-icon>
     </button>
 
+
+        <!-- ********** MAIN  *********** -->
     <main>
       <article class="utility-container">
         <div class="article-example">
@@ -392,34 +378,24 @@
       </section>
     </section>
 
-    <footer class="footer">
-      <ul class="social-links">
-        <li>
-          <a href="#" class="footer-link"
-            ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="#" class="footer-link"
-            ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="#" class="footer-link"
-            ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-          ></a>
-        </li>
-      </ul>
-
-      <p class="copyright">
-        Copyright &copy; 2023 por Chemical Science for Students. Todos los
-        derechos reservados.
-      </p>
+    <!-- *********FOOTER**************** -->
+    <footer class="footer-container">
+      <p>Copyright ©2023 CSS</p>
+      <section class="flex-container">
+          <a class="social-media flex-container"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-media flex-container"><i class="fa-brands fa-tiktok"></i></a>
+      </section>
     </footer>
+
+
+   </main> 
   </body>
 
    <!-- SCRIPT -->
-   <script src="../js/script.js" defer></script>
-   <script src="../js/carousel.js" defer></script>
-
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <script type="text/javascript" src="../js/app.js" defer></script>
+   <script src="../js/fontAsome.min.js" type="text/javascript" defer></script>
+   <!-- <script src="../js/script.js" defer></script> -->
 </html>
