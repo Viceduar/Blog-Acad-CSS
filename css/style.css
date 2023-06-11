@@ -100,13 +100,14 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo-img{
-    height: 25px;
+    height: 100%;
     padding: 12.5px;
     width: auto;
+    z-index: 2;
 }
 
 .menu-container{
@@ -175,6 +176,7 @@ body {
 
 .show-menu{
     left: 0px;
+    text-align: center;
 }   
 
 
@@ -305,9 +307,8 @@ body {
 
 
 .heading-primary {
-  font-size: 3.6rem;
   font-weight: 800;
-  color: #15161c;
+  color: var(--dark-blue);
   letter-spacing: 0.1rem; }
 
 .title-article:link, .title-article:visited {
@@ -498,18 +499,18 @@ body {
 
 
 .btn-return {
-  display: inline-block;
   position: sticky;
+  left: 95%;
   top: 90%;
-  left: 1rem;
-  z-index: 500;
-  background-color: #15161c;
-  width: 3.6rem;
-  height: 3.6rem;
-  color: #959ce8;
+  z-index: 1;
+  background-color: var(--blue);
+  color: var(--dark-blue);
+  width: 60px;
+  height: 60px;
+  
   font-size: 2rem;
   border: none;
-  border-radius: 5px; }
+  border-radius: 50%; }
   .btn-return:hover {
     cursor: pointer; }
 
