@@ -506,8 +506,7 @@ body {
   background-color: var(--blue);
   color: var(--dark-blue);
   width: 60px;
-  height: 60px;
-  
+  height: 60px; 
   font-size: 2rem;
   border: none;
   border-radius: 50%; }
@@ -603,8 +602,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--blue);
-  background-color: #fff;
+  background-color: transparent;
+  border: none;
   color: var(--blue);
   font-size: 2rem;
   width: 3rem;
@@ -615,11 +614,12 @@ body {
   .btn-carousel--left {
     top: 50%;
     left: -1.5%;
-    transform: translate(-50%, -50%); }
+    rotate: -90deg;
+    }
   .btn-carousel--right {
     top: 50%;
     right: -1.5%;
-    transform: translate(50%, -50%); }
+    rotate: 90deg; }
 
 .card-container {
   height: 100%;
@@ -659,10 +659,11 @@ body {
   width: 40%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-fit: cover;
 }
 
 .newsletter-form{
-  width: 40%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -689,8 +690,22 @@ body {
   font-size: 2rem;
   color: var(--blue);
   border-radius: 8px;
-  border-color: var(--blue);
   box-shadow: 0 0 0;
+  text-align: center;
+  padding: 4px;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  border: 1px solid var(--blue);
+}
+
+.form-input:focus{
+  border: 2px solid var(--blue);
+  outline: none;
+}
+
+.form-input::placeholder{
+  color: var(--blue);
+  opacity: 1;
 }
 
 .submit-button{
@@ -701,18 +716,34 @@ body {
   font-weight: 600;
   color: white;
   border-radius: 8px;
-  width: 60%;
+  border: none;
+  width: 40%;
   background-color: var(--dark-blue);
+  outline: none;
 }
+
 
 .submit-button:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
 
+@media (max-width:1300px) {
+  .submit-button{
+    font-size: 2.2rem;
+  }
+}
 
+@media (max-width:1300px) {
+  .submit-button{
+    font-size: 1.9rem;
+  }
+}
 
 @media (max-width:750px) {
+  .submit-button{
+    font-size: 2.4rem;
+  }
   .newsletter-content{
     flex-direction: column;
   }
@@ -805,12 +836,9 @@ body {
   border-bottom: 1px solid #eaebfa; }
 
 .section-featured {
-  padding: 9.6rem 4.8rem;
+  padding:4.8rem;
   border-bottom: 1px solid #eaebfa; }
 
-.section-exploration {
-  padding: 9.6rem 4.8rem;
-  border-bottom: 1px solid #eaebfa; }
 
 .section-newsletter {
-  padding: 9.6rem 4.8rem; }
+  padding: 4.8rem; }
