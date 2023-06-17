@@ -801,7 +801,7 @@ body {
   padding-top: 0;
   border-bottom: 1px solid #eaebfa; 
   max-width: 131rem;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
 }
   
 
