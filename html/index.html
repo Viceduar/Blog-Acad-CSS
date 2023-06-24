@@ -35,9 +35,9 @@
       <img class="logo-img" src="../img/Logos/fennexLogo.svg">
       <nav id="navigationMenu" class="menu-container">
           <a class="menu-link">INICIO</a>
-          <a class="menu-link">BLOG</a>
+          <a class="menu-link menu-selection">BLOG</a>
           <a class="menu-link">ACERCA DE</a>
-          <a class="menu-link menu-selection">DEMO</a>
+          <a class="menu-link">DEMO</a>
           <a class="menu-link">CSS</a>
           <a class="menu-link">CONTACTO</a>
       </nav>
@@ -49,7 +49,7 @@
 
     <!-- ********** RETURN BUTTON *********** -->
 
-    <button @click="scrollBack()" class="btn-return">
+    <button id="scrollTopBtn" @click="scrollBack()" class="btn-return">
       <ion-icon name="logo-vercel"></ion-icon>
     </button>
 

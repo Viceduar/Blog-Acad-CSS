@@ -31,9 +31,9 @@
       <img class="logo-img" src="../img/Logos/fennexLogo.svg">
       <nav id="navigationMenu" class="menu-container">
           <a class="menu-link">INICIO</a>
-          <a class="menu-link">BLOG</a>
+          <a class="menu-link menu-selection" href="index.html">BLOG</a>
           <a class="menu-link">ACERCA DE</a>
-          <a class="menu-link menu-selection">DEMO</a>
+          <a class="menu-link ">DEMO</a>
           <a class="menu-link">CSS</a>
           <a class="menu-link">CONTACTO</a>
       </nav>
@@ -44,7 +44,7 @@
 
  <!-- ********** RETURN BUTTON *********** -->
 
-    <button @click="scrollBack()" class="btn-return">
+    <button id="scrollTopBtn" @click="scrollBack()" class="btn-return">
       <ion-icon name="logo-vercel"></ion-icon>
     </button>
 
@@ -52,7 +52,7 @@
         <!-- ********** MAIN  *********** -->
     <main>
       <article class="utility-container">
-        <div class="article-example">
+        <main class="article-example">
           <div class="heading-box utility-inline-block utility-margin-bottom-big">
             <div class="utility-inline-block">
               <h2 class="heading-primary fluid-font-title">Título de la entrada</h2>
@@ -115,6 +115,7 @@
 
           <figure class="img-container img-container--small utility-float-left">
             <img src="../img/img-7.jpg" alt="Laboratorio" />
+            <figcaption>Figura 1. Descripcion</figcaption>
           </figure>
           <p class="p-article">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
@@ -150,6 +151,7 @@
 
           <figure class="img-container img-container--small utility-float-right">
             <img src="../img/img-4.jpg" alt="Laboratorio" />
+            <figcaption>Figura 2. Descripcion</figcaption>
           </figure>
           <p class="p-article">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
@@ -192,7 +194,7 @@
             voluptate ut.
           </p>
 
-          <div class="video-container">
+          <section class="video-container">
             <iframe
               width="560"
               height="315"
@@ -202,8 +204,8 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-          </div>
-        </div>
+          </section>
+        </main>
       </article>
     </main>
 

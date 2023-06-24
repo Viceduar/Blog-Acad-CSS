@@ -122,6 +122,7 @@ const { createApp } = Vue
         }
       });
 
+
     },
     methods:{
         /**
@@ -154,12 +155,23 @@ const { createApp } = Vue
          * When called, takes the user to the beginning of the page
          */
         // This function is called by the return button
-        scrollBack(){
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
+        scrollBack() {
+          document.body.scrollTop = 0; // Safari
+          document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
         }
 
     }
   }).mount('#app')
+
+  // ******************************
+// Scroll display function
+// ******************************
+
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+}
